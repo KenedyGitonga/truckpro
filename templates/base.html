@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TruckkPro - {% block title %}Powering Drivers, Supporting Owners{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="{% url 'home' %}" class="nav-logo">
+                <img src="{% static 'images/logo.png' %}" alt="TruckkPro Logo">
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a></li>
+                <li><a href="{% url 'services' %}" class="{% if request.resolver_match.url_name == 'services' %}active{% endif %}">Services</a></li>
+                <li><a href="{% url 'about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About Us</a></li>
+                <li><a href="{% url 'home' %}#contact" class="nav-cta">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE CONTENT -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <img src="{% static 'images/logo.png' %}" alt="TruckkPro" class="footer-logo">
+                <p>Powering Drivers, Supporting Owners.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><i class="fas fa-phone"></i> 0700280974</p>
+                <p><i class="fab fa-whatsapp"></i> 0700280974</p>
+                <p><i class="fas fa-envelope"></i> truckkpro.consult@gmail.com</p>
+                <p><i class="fas fa-location-dot"></i> REPEN COMPLEX, Nairobi</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TruckkPro Consultancy Firm. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

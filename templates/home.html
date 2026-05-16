@@ -1,0 +1,325 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Powering Drivers.<br><span>Supporting Owners.</span></h1>
+            <p>Professional consultancy for truck owners, drivers, and Saccos — helping you stay compliant, reduce costs, and run smarter transport operations.</p>
+            <div class="hero-buttons">
+                <a href="{% url 'services' %}" class="btn-primary">Get Started</a>
+                <a href="#contact" class="btn-outline">Talk to Us Today</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="{% static 'images/logo.png' %}" alt="TruckkPro">
+        </div>
+    </div>
+</section>
+
+<!-- VALUE STATS -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="section-title">Why TruckkPro?</h2>
+        <p class="section-subtitle">Trusted by truck owners, drivers and Saccos across Kenya</p>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-truck"></i>
+                <h3>9+</h3>
+                <p>Years of Industry Experience</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-handshake"></i>
+                <h3>50+</h3>
+                <p>Government & Private Partners</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-shield-halved"></i>
+                <h3>100%</h3>
+                <p>Committed to Compliance & Growth</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="section section-gray">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Practical support for owners, drivers and Saccos — built for day to day transport operations.</p>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <span class="service-badge">Service 1</span>
+                <i class="fas fa-file-contract"></i>
+                <h3>KeNHA Permits Processing</h3>
+                <p>Assistance with application and compliance for Kenya National Highways Authority permits.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-badge">Service 2</span>
+                <i class="fas fa-building"></i>
+                <h3>Virtual SACCO Office Solutions</h3>
+                <p>Supporting Saccos with administrative structure, coordination, and digital operations.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-badge">Service 3</span>
+                <i class="fas fa-truck-fast"></i>
+                <h3>Fleet Management</h3>
+                <p>Improving efficiency, monitoring performance, and reducing operational costs.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-badge">Service 4</span>
+                <i class="fas fa-user-shield"></i>
+                <h3>Driver Sensitization & Training</h3>
+                <p>Equipping drivers with knowledge on safety, discipline, and regulatory compliance.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-badge">Service 5</span>
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Transporters Training & Support</h3>
+                <p>Capacity building for truck owners and operators to improve business performance.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-badge">Service 6</span>
+                <i class="fas fa-calendar-check"></i>
+                <h3>Events Organizing & Sponsorship</h3>
+                <p>Planning and managing transport-related events, meetings, and stakeholder engagements.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-badge">Service 7</span>
+                <i class="fas fa-shield"></i>
+                <h3>Insurance Solutions</h3>
+                <p>Comprehensive, Third Party, Personal Accidents & WIBA coverage for your fleet.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section">
+    <div class="container">
+        <div class="why-grid">
+            <div class="why-list">
+                <h2 class="section-title" style="text-align:left;">Why Choose TruckkPro?</h2>
+                <div class="why-item">
+                    <i class="fas fa-circle-check"></i>
+                    <div>
+                        <h4>9 Years of Proven Experience</h4>
+                        <p>Hands-on industry knowledge that no textbook can teach.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-circle-check"></i>
+                    <div>
+                        <h4>Government & Private Partnerships</h4>
+                        <p>We work directly with KeNHA, KURA, NTSA, Isuzu, Tata and more.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-circle-check"></i>
+                    <div>
+                        <h4>Real-World Solutions</h4>
+                        <p>Practical advice tailored specifically for truckers, not generic consulting.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-circle-check"></i>
+                    <div>
+                        <h4>Trusted by Owners & Saccos</h4>
+                        <p>A reliable partner for both independent owners and organized Saccos.</p>
+                    </div>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-circle-check"></i>
+                    <div>
+                        <h4>Compliance, Efficiency & Growth</h4>
+                        <p>We walk with you every step — from compliance to profitability.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="why-image">
+                <img src="{% static 'images/logo.png' %}" alt="Why TruckkPro">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHO WE SERVE -->
+<section class="section section-gray">
+    <div class="container">
+        <h2 class="section-title">Who We Serve</h2>
+        <p class="section-subtitle">Built for everyone in the transport industry</p>
+        <div class="serve-grid">
+            <div class="serve-card">
+                <i class="fas fa-truck"></i>
+                <h3>Independent Truck Owners</h3>
+            </div>
+            <div class="serve-card">
+                <i class="fas fa-people-group"></i>
+                <h3>Transport Saccos</h3>
+            </div>
+            <div class="serve-card">
+                <i class="fas fa-truck-ramp-box"></i>
+                <h3>Fleet Operators</h3>
+            </div>
+            <div class="serve-card">
+                <i class="fas fa-boxes-stacked"></i>
+                <h3>Logistics Companies</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to streamline your operations?</h2>
+        <p>Talk to TruckkPro today and take control of your transport business.</p>
+        <a href="#contact" class="btn-white">Contact Us Now</a>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<!-- <section id="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">We're ready to help you move smarter</p>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Let's Talk Transport</h3>
+                <p>Whether you're an independent truck owner, a Sacco, or a fleet operator — we have a solution for you. Reach out today.</p>
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <span>0700280974</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>0700280974</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-envelope"></i>
+                    <span>truckkpro.consult@gmail.com</span>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-location-dot"></i>
+                    <span>REPEN COMPLEX, Nairobi, Kenya</span>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone" placeholder="07XXXXXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Service Interested In</label>
+                        <select name="service">
+                            <option value="">Select a service...</option>
+                            <option>KeNHA Permits Processing</option>
+                            <option>Virtual SACCO Office Solutions</option>
+                            <option>Fleet Management</option>
+                            <option>Driver Sensitization & Training</option>
+                            <option>Transporters Training & Support</option>
+                            <option>Events Organizing & Sponsorship</option>
+                            <option>Insurance Solutions</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Tell us about your needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- CONTACT SECTION -->
+<section id="contact" style="background:#f5f7fa; padding:80px 20px;">
+  <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">We're ready to help you move smarter</p>
+      <div class="contact-grid">
+          <div class="contact-info">
+              <h3>Let's Talk Transport</h3>
+              <p>Whether you're an independent truck owner, a Sacco, or a fleet operator — we have a solution for you. Reach out directly on WhatsApp and we'll respond fast.</p>
+              <div class="contact-detail">
+                  <i class="fas fa-phone"></i>
+                  <span>0700280974</span>
+              </div>
+              <div class="contact-detail">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>0700280974</span>
+              </div>
+              <div class="contact-detail">
+                  <i class="fas fa-envelope"></i>
+                  <span>truckkpro.consult@gmail.com</span>
+              </div>
+              <div class="contact-detail">
+                  <i class="fas fa-location-dot"></i>
+                  <span>REPEN COMPLEX, Nairobi, Kenya</span>
+              </div>
+          </div>
+          <div class="contact-form">
+              <div style="text-align:center; padding:20px 0;">
+                  <i class="fab fa-whatsapp" style="font-size:70px; color:#25D366; margin-bottom:20px; display:block;"></i>
+                  <h3 style="font-size:24px; font-weight:700; color:#1B2A4A; margin-bottom:12px;">Chat with us on WhatsApp</h3>
+                  <p style="color:#666; font-size:15px; margin-bottom:30px; line-height:1.7;">
+                      Click the button below to start a conversation directly with TruckkPro on WhatsApp. Tell us your needs and we'll get back to you immediately.
+                  </p>
+
+                  <!-- Quick message buttons -->
+                  <div style="display:flex; flex-direction:column; gap:12px; margin-bottom:30px;">
+                      <a href="https://wa.me/254700280974?text=Hello%20TruckkPro%2C%20I%20need%20help%20with%20KeNHA%20Permits" 
+                         target="_blank" class="wa-quick-btn">
+                          <i class="fas fa-file-contract"></i> KeNHA Permits Processing
+                      </a>
+                      <a href="https://wa.me/254700280974?text=Hello%20TruckkPro%2C%20I%20need%20help%20with%20Fleet%20Management" 
+                         target="_blank" class="wa-quick-btn">
+                          <i class="fas fa-truck-fast"></i> Fleet Management
+                      </a>
+                      <a href="https://wa.me/254700280974?text=Hello%20TruckkPro%2C%20I%20need%20help%20with%20Insurance" 
+                         target="_blank" class="wa-quick-btn">
+                          <i class="fas fa-shield"></i> Insurance Solutions
+                      </a>
+                      <a href="https://wa.me/254700280974?text=Hello%20TruckkPro%2C%20I%20need%20help%20with%20SACCO%20Office%20Solutions" 
+                         target="_blank" class="wa-quick-btn">
+                          <i class="fas fa-building"></i> Virtual SACCO Solutions
+                      </a>
+                  </div>
+
+                  <a href="https://wa.me/254700280974?text=Hello%20TruckkPro%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services" 
+                     target="_blank" 
+                     style="display:inline-flex; align-items:center; gap:10px; background:#25D366; color:#fff; padding:16px 40px; border-radius:30px; font-size:17px; font-weight:700; transition:transform 0.2s; box-shadow: 0 5px 20px rgba(37,211,102,0.4);">
+                      <i class="fab fa-whatsapp" style="font-size:22px;"></i>
+                      Chat with TruckkPro Now
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+{% endblock %}

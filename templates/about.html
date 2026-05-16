@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <h1>About Us</h1>
+    <p>9 years of hands-on experience in Kenya's transport industry</p>
+</section>
+
+<!-- OUR STORY -->
+<section class="section">
+    <div class="container">
+        <div class="about-story">
+            <div>
+                <h2>Our Story</h2>
+                <p>TruckkPro Consultancy Firm was founded with one mission — to solve the real challenges facing truck owners, drivers, and Saccos in Kenya.</p>
+                <p>With 9 years of hands-on experience in the trucking industry, we have grown into a trusted partner for transport businesses across the country. We understand the roads, the regulations, and the people behind the wheel.</p>
+                <p>From KeNHA permit processing to fleet management and driver training, every solution we offer is built from real industry experience — not theory.</p>
+                <a href="{% url 'services' %}" class="btn-primary" style="display:inline-block; margin-top:20px;">View Our Services</a>
+            </div>
+            <div>
+                <img src="{% static 'images/logo.png' %}" alt="TruckkPro Story">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- APPROACH -->
+<section class="section section-dark">
+    <div class="container">
+        <h2 class="section-title">Our Approach</h2>
+        <p class="section-subtitle">We don't just advise — we partner with you</p>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-comments"></i>
+                <h3>Consult</h3>
+                <p>We listen to your challenges and understand your specific transport business needs.</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-map"></i>
+                <h3>Plan</h3>
+                <p>We design practical, results-driven solutions tailored specifically for you.</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-rocket"></i>
+                <h3>Execute</h3>
+                <p>We walk with you every step of the way to ensure smooth implementation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHO WE SERVE -->
+<section class="section section-gray">
+    <div class="container">
+        <h2 class="section-title">Who We Serve</h2>
+        <p class="section-subtitle">Built for everyone in the transport ecosystem</p>
+        <div class="serve-grid">
+            <div class="serve-card">
+                <i class="fas fa-truck"></i>
+                <h3>Independent Truck Owners</h3>
+            </div>
+            <div class="serve-card">
+                <i class="fas fa-people-group"></i>
+                <h3>Transport Saccos</h3>
+            </div>
+            <div class="serve-card">
+                <i class="fas fa-truck-ramp-box"></i>
+                <h3>Fleet Operators</h3>
+            </div>
+            <div class="serve-card">
+                <i class="fas fa-boxes-stacked"></i>
+                <h3>Logistics Companies</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Our Partners</h2>
+        <p class="section-subtitle">Strong relationships across government and private sector</p>
+        <div class="partners-grid">
+            <div class="partner-card">Kenya National Highways Authority (KeNHA)</div>
+            <div class="partner-card">Kenya Urban Roads Authority (KURA)</div>
+            <div class="partner-card">Kenya Rural Roads Authority (KeRRA)</div>
+            <div class="partner-card">National Transport & Safety Authority (NTSA)</div>
+            <div class="partner-card">Isuzu East Africa</div>
+            <div class="partner-card">Tata Motors</div>
+            <div class="partner-card">Simba Corporation</div>
+            <div class="partner-card">Sinotruk</div>
+            <div class="partner-card">Leading Insurance Companies</div>
+        </div>
+    </div>
+</section>
+
+<!-- HASHTAG BANNER -->
+<section style="background:#E87722; padding:50px 20px; text-align:center;">
+    <h2 style="color:#fff; font-size:32px; font-weight:700;">#PoweringDriversSupportingOwners</h2>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" style="background:#1B2A4A;">
+    <div class="container">
+        <h2>Let's work together</h2>
+        <p>Reach out to TruckkPro and let's grow your transport business.</p>
+        <a href="{% url 'home' %}#contact" class="btn-white">Contact Us Today</a>
+    </div>
+</section>
+
+{% endblock %}
